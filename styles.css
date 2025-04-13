@@ -312,12 +312,16 @@ nav {
     color: var(--primary-color);
     width: 20px;
 }
-
 .social-links {
     display: flex;
     gap: 15px;
     margin-top: 30px;
 }
+
+.social-links-1{
+    color: white;
+}
+
 
 .social-links a {
     display: inline-flex;
@@ -328,11 +332,15 @@ nav {
     background-color: var(--primary-color);
     color: var(--white);
     border-radius: 50%;
-    transition: background-color 0.3s;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+    text-decoration: none;
 }
 
 .social-links a:hover {
     background-color: var(--secondary-color);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .contact-form .form-group {
@@ -426,6 +434,25 @@ footer {
         width: 250px;
         height: 250px;
         font-size: 6rem;
+      
+    }
+    .profile-image {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        border: 5px solid var(--primary-color);
+        object-fit: cover;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease-in-out;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .profile-image:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        border-color: var(--secondary-color);
+        cursor: pointer;
     }
 
     .contact-container {
